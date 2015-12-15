@@ -1,11 +1,10 @@
-# hubot-mongodb-brain [![travis][travis_img]][travis_url] [![npm][npm_img]][npm_url]
-[![slack][slack_img]][slack_url]
+# hubot-mongodb-brain [![travis][travis_img]][travis_url] [![npm][npm_img]][npm_url] [![slack][slack_img]][slack_url]
 
-> Persist [hubot][hubot]'s brain to MongoDB instead of Redis.
+> Persist [Hubot][hubot]'s brain to MongoDB instead of Redis.
 
 ## Usage
 
-In hubot project repo, e.g. [@mongodb-js/hubot](https://github.com/mongodb-js/hubot), run:
+In a Hubot project repo, e.g. [@mongodb-js/hubot](https://github.com/mongodb-js/hubot), run:
 
 ```
 npm install hubot-mongodb-brain --save;
