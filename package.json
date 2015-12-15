@@ -10,9 +10,7 @@
     "fmt": "mongodb-js-fmt",
     "check": "mongodb-js-precommit",
     "test": "mocha",
-    "ci": "npm run check && npm test",
-    "postinstall": "./node_modules/.bin/hubot-script-installer",
-    "postuninstall": "./node_modules/.bin/hubot-script-installer --uninstall"
+    "ci": "npm run check && npm test"
   },
   "homepage": "http://github.com/mongodb-js/hubot-mongodb-brain",
   "repository": {
@@ -20,9 +18,8 @@
     "url": "git://github.com/mongodb-js/hubot-mongodb-brain.git"
   },
   "dependencies": {
-    "hubot-script-installer": "0.0.0",
     "mongodb": "^2.0.52",
-    "mongodb-redact": "0.0.1",
+    "mongodb-redact": "^0.0.1",
     "mongodb-url": "^1.0.3"
   },
   "devDependencies": {

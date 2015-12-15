@@ -1,54 +1,54 @@
 # hubot-mongodb-brain [![travis][travis_img]][travis_url] [![npm][npm_img]][npm_url]
+[![slack][slack_img]][slack_url]
 
-> Persist hubot's brain to MongoDB instead of Redis.
+> Persist [hubot][hubot]'s brain to MongoDB instead of Redis.
 
-MongoDB brain for Hubot. Support MongoLab and MongoHQ on Heroku.
+## Usage
 
-- https://github.com/shokai/hubot-mongodb-brain
-- https://npmjs.com/package/hubot-mongodb-brain
+In hubot project repo, e.g. [@mongodb-js/hubot](https://github.com/mongodb-js/hubot), run:
 
-[![Circle CI](https://circleci.com/gh/shokai/hubot-mongodb-brain.svg?style=svg)](https://circleci.com/gh/shokai/hubot-mongodb-brain)
-
-## difference betweet `redis-brain`
-
-Hubot's default `redis-brain` saves all data into one large blob (It's not using Redis as KVS) and write it every 20 seconds. So it exceeds `maxmemory` of Redis.
-
-
-## Requirements
-
-- mongodb
-- coffee-script 1.9+
-
-## Install
-
-    % npm install hubot-mongodb-brain -save
-    % npm install coffee-script@">=1.9" -save
-
-
-### edit `external-script.json`
-
-```json
-[ "hubot-mongodb-brain" ]
+```
+npm install hubot-mongodb-brain --save;
 ```
 
-### enable mongolab on heroku
+Update the `./external-scripts.json` in your hubot project repo to add **hubot-mongodb-brain**:
 
-    % heroku addons:create mongolab
+```json
+[
+  "hubot-mongodb-brain"
+]
+```
 
+## Configuration
 
-## Export / Import
+Set the `MONGODB_URL` environment variable to specify the MongoDB deployment
+to use [Default: `mongodb://localhost:27017`].  For example:
 
-- https://github.com/shokai/hubot-mongodb-brain/tree/master/export-import-tools
+```
+heroku config:set MONGODB_URL=mongodb://db.slack.mongodb.parts:27017/slack;
+```
 
+### Debugging
 
-## Develop
+Adjust the `HUBOT_LOG_LEVEL` environment variable should you run into problems.
+For example, to see the actual data in hubot's brain:
 
-### Debug
+```
+HUBOT_LOG_LEVEL=debug ./bin/hubot;
+```
 
-    % export HUBOT_LOG_LEVEL=debug
+For safety, the actual values inside the brain will be logged using [mongodb-redact](http://npm.im/mongodb-redact):
 
+<img src="https://cldup.com/hQXWKKH6oX-1200x1200.png" width="600" />
 
-### Test
+## License
 
-    % npm install
-    % npm test
+Apache 2.0
+
+[travis_img]: https://img.shields.io/travis/mongodb-js/hubot-mongodb-brain.svg
+[travis_url]: https://travis-ci.org/mongodb-js/hubot-mongodb-brain
+[npm_img]: https://img.shields.io/npm/v/hubot-mongodb-brain.svg
+[npm_url]: https://npmjs.org/package/hubot-mongodb-brain
+[slack_url]: https://slack.mongodb.parts/
+[slack_img]: https://slack.mongodb.parts/badge.svg
+[hubot]: https://hubot.github.com/
