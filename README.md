@@ -1,4 +1,7 @@
-# hubot-mongodb-brain
+# hubot-mongodb-brain [![travis][travis_img]][travis_url] [![npm][npm_img]][npm_url]
+
+> Persist hubot's brain to MongoDB instead of Redis.
+
 MongoDB brain for Hubot. Support MongoLab and MongoHQ on Heroku.
 
 - https://github.com/shokai/hubot-mongodb-brain
