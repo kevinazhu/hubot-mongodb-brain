@@ -18,7 +18,7 @@
     "url": "git://github.com/mongodb-js/hubot-mongodb-brain.git"
   },
   "dependencies": {
-    "mongodb": "^2.0.52",
+    "mongodb": "^2.2.22",
     "mongodb-redact": "^0.1.0",
     "mongodb-url": "^1.0.3"
   },
