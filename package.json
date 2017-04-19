@@ -5,17 +5,17 @@
   "contributors": [
     "Lucas Hrabovsky <lucas@mongodb.com>"
   ],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "fmt": "mongodb-js-fmt",
     "check": "mongodb-js-precommit",
     "test": "mocha",
     "ci": "npm run check && npm test"
   },
-  "homepage": "http://github.com/mongodb-js/hubot-mongodb-brain",
+  "homepage": "http://github.com/frdmn/hubot-iwelt-mongodb-brain",
   "repository": {
     "type": "git",
-    "url": "git://github.com/mongodb-js/hubot-mongodb-brain.git"
+    "url": "git://github.com/frdmn/hubot-iwelt-mongodb-brain.git"
   },
   "dependencies": {
     "mongodb": "^2.0.52",
