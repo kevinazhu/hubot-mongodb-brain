@@ -1,5 +1,5 @@
 {
-  "name": "hubot-new-mongodb-brain",
+  "name": "hubot-iwelt-mongodb-brain",
   "description": "Persist hubot's brain to MongoDB instead of Redis.",
   "author": "Sho Hashimoto <hashimoto@shokai.org>",
   "contributors": [
