@@ -1,21 +1,18 @@
 {
-  "name": "hubot-iwelt-mongodb-brain",
+  "name": "hubot-mongodb-brain-kzhu",
   "description": "Persist hubot's brain to MongoDB instead of Redis.",
-  "author": "Sho Hashimoto <hashimoto@shokai.org>",
-  "contributors": [
-    "Lucas Hrabovsky <lucas@mongodb.com>"
-  ],
-  "version": "1.0.1",
+  "author": "Kevin Zhu <kevinazhu@gmail.com>",
+  "version": "0.0.1",
   "scripts": {
     "fmt": "mongodb-js-fmt",
     "check": "mongodb-js-precommit",
     "test": "mocha",
     "ci": "npm run check && npm test"
   },
-  "homepage": "http://github.com/frdmn/hubot-iwelt-mongodb-brain",
+  "homepage": "https://github.com/kevinazhu/hubot-mongodb-brain-kzhu",
   "repository": {
     "type": "git",
-    "url": "git://github.com/frdmn/hubot-iwelt-mongodb-brain.git"
+    "url": "git://github.com/kevinazhu/hubot-mongodb-brain-kzhu.git"
   },
   "dependencies": {
     "mongodb": "^2.0.52",
