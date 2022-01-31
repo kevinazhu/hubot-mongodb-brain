@@ -13,7 +13,6 @@
     "url": "git://github.com/kevinazhu/hubot-mongodb-brain-kzhu.git"
   },
   "dependencies": {
-    "mongo-url-parser": "^1.0.1",
     "mongodb": "^3.7.3",
     "mongodb-redact": "^0.2.2"
   },
