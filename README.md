@@ -1,31 +1,27 @@
-# hubot-mongodb-brain [![travis][travis_img]][travis_url] [![npm][npm_img]][npm_url] [![slack][slack_img]][slack_url]
+# hubot-mongodb-brain-kzhu
 
-> Persist [Hubot][hubot]'s brain to MongoDB instead of Redis.
+> Persist [Hubot](https://hubot.github.com/)'s brain to MongoDB instead of Redis.
 
 ## Usage
 
 In a Hubot project repo, e.g. [@mongodb-js/hubot](https://github.com/mongodb-js/hubot), run:
 
 ```
-npm install hubot-mongodb-brain --save;
+yarn add kevinazhu/hubot-mongodb-brain-kzhu;
 ```
 
 Update the `./external-scripts.json` in your hubot project repo to add **hubot-mongodb-brain**:
 
 ```json
 [
-  "hubot-mongodb-brain"
+  "hubot-mongodb-brain-kzhu"
 ]
 ```
 
 ## Configuration
 
-Set the `MONGODB_URL` environment variable to specify the MongoDB deployment
-to use [Default: `mongodb://localhost:27017`].  For example:
-
-```
-heroku config:set MONGODB_URL=mongodb://db.slack.mongodb.parts:27017/slack;
-```
+Set the `MONGODB_URL` and `MONGODB_DBNAME` environment variable to specify the MongoDB deployment
+to use [Default: `mongodb://localhost:27017` and `hubot-brain`].
 
 ### Debugging
 
@@ -43,11 +39,3 @@ For safety, the actual values inside the brain will be logged using [mongodb-red
 ## License
 
 Apache 2.0
-
-[travis_img]: https://img.shields.io/travis/mongodb-js/hubot-mongodb-brain.svg
-[travis_url]: https://travis-ci.org/mongodb-js/hubot-mongodb-brain
-[npm_img]: https://img.shields.io/npm/v/hubot-mongodb-brain.svg
-[npm_url]: https://npmjs.org/package/hubot-mongodb-brain
-[slack_url]: https://slack.mongodb.parts/
-[slack_img]: https://slack.mongodb.parts/badge.svg
-[hubot]: https://hubot.github.com/
