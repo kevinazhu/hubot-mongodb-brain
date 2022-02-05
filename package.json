@@ -2,7 +2,7 @@
   "name": "@kevinazhu/hubot-mongodb-brain",
   "description": "Persist hubot's brain to MongoDB instead of Redis.",
   "author": "Kevin Zhu <kevinazhu@gmail.com>",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "test": "mocha",
     "ci": "npm run check && npm test"
