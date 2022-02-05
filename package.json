@@ -1,16 +1,16 @@
 {
-  "name": "hubot-mongodb-brain-kzhu",
+  "name": "@kevinazhu/hubot-mongodb-brain",
   "description": "Persist hubot's brain to MongoDB instead of Redis.",
   "author": "Kevin Zhu <kevinazhu@gmail.com>",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "scripts": {
     "test": "mocha",
     "ci": "npm run check && npm test"
   },
-  "homepage": "https://github.com/kevinazhu/hubot-mongodb-brain-kzhu",
+  "homepage": "https://github.com/kevinazhu/hubot-mongodb-brain",
   "repository": {
     "type": "git",
-    "url": "git://github.com/kevinazhu/hubot-mongodb-brain-kzhu.git"
+    "url": "git://github.com/kevinazhu/hubot-mongodb-brain.git"
   },
   "dependencies": {
     "mongodb": "^3.7.3",
@@ -19,7 +19,7 @@
   "devDependencies": {
     "mocha": "^9.2.0"
   },
-  "license": "Apache-2.0",
+  "license": "MIT",
   "volta": {
     "node": "16.13.2",
     "yarn": "1.22.17"

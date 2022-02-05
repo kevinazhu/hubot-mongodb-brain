@@ -4,17 +4,17 @@
 
 ## Usage
 
-In a Hubot project repo, e.g. [@mongodb-js/hubot](https://github.com/mongodb-js/hubot), run:
+In a Hubot project repo, e.g. [kevinazhu/hubot-rocketchat-rss](https://github.com/kevinazhu/hubot-rocketchat-rss), run:
 
 ```
-yarn add kevinazhu/hubot-mongodb-brain-kzhu;
+yarn add @kevinazhu/hubot-mongodb-brain;
 ```
 
 Update the `./external-scripts.json` in your hubot project repo to add **hubot-mongodb-brain**:
 
 ```json
 [
-  "hubot-mongodb-brain-kzhu"
+  "@kevinazhu/hubot-mongodb-brain"
 ]
 ```
 
@@ -35,7 +35,3 @@ HUBOT_LOG_LEVEL=debug ./bin/hubot;
 For safety, the actual values inside the brain will be logged using [mongodb-redact](http://npm.im/mongodb-redact):
 
 <img src="https://cldup.com/hQXWKKH6oX-1200x1200.png" width="600" />
-
-## License
-
-Apache 2.0
